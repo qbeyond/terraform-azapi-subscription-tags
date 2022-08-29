@@ -7,9 +7,6 @@ Add tags to any azure subscription via terraform
 
  The tags are added. If a tag already exists it will be overridden. Other existing tags will **not** be deleted.
 
- ## Known errors
-
-When running on resources that support managed identies but using `az login` you may encounter the error `DefaultAzureCredential authentication failed`. This is [fixed](https://github.com/Azure/terraform-provider-azapi/issues/144) in Version `0.5.0` of `azapi`. Prior to version `1.1.0` this module needed a `0.3.x` version. So you need to upgrade this module and make sure you are using `azapi` in a newer version (you may need to run `terraform init -upgrade`).
  <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
