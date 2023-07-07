@@ -11,3 +11,9 @@ variable "tags" {
   description = "Map of tag key and values to apply to subscription."
   type        = map(string)
 }
+
+variable "ignore_missing_property" {
+  description = "Whether ignore not returned properties like credentials in body to suppress plan-diff"
+  type        = bool
+  default = false
+}
