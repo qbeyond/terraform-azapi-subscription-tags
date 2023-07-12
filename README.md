@@ -34,6 +34,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_ignore_missing_property"></a> [ignore\_missing\_property](#input\_ignore\_missing\_property) | Whether ignore not returned properties like credentials in body to suppress plan-diff | `bool` | `false` | no |
 | <a name="input_subscription_id"></a> [subscription\_id](#input\_subscription\_id) | The GUID of the subscription. | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Map of tag key and values to apply to subscription. | `map(string)` | n/a | yes |
 
