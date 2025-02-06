@@ -12,13 +12,13 @@ Add tags to any azure subscription via terraform
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_azapi"></a> [azapi](#requirement\_azapi) | >= 0.5.0 |
+| <a name="requirement_azapi"></a> [azapi](#requirement\_azapi) | ~>1.15 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azapi"></a> [azapi](#provider\_azapi) | >= 0.5.0 |
+| <a name="provider_azapi"></a> [azapi](#provider\_azapi) | ~>1.15 |
 
 ## Modules
 
@@ -28,7 +28,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azapi_update_resource.subscription_tags](https://registry.terraform.io/providers/Azure/azapi/latest/docs/resources/update_resource) | resource |
+| [azapi_update_resource.subscription_tags](https://registry.terraform.io/providers/azure/azapi/latest/docs/resources/update_resource) | resource |
 
 ## Inputs
 
