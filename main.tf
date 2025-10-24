@@ -14,6 +14,9 @@ resource "azapi_update_resource" "subscription_tags" {
   name                    = "default"
   ignore_missing_property = var.ignore_missing_property
   body = {
-    tags = var.tags
+    operation = "Merge"
+    properties = {
+      tags = var.tags
+    }
   }
 }
