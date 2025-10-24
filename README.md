@@ -12,13 +12,13 @@ Add tags to any azure subscription via terraform
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_azapi"></a> [azapi](#requirement\_azapi) | ~>1.15 |
+| <a name="requirement_azapi"></a> [azapi](#requirement\_azapi) | ~>2.7 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azapi"></a> [azapi](#provider\_azapi) | ~>1.15 |
+| <a name="provider_azapi"></a> [azapi](#provider\_azapi) | ~>2.7 |
 
 ## Modules
 
