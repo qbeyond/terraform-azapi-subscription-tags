@@ -28,7 +28,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azapi_update_resource.subscription_tags](https://registry.terraform.io/providers/azure/azapi/latest/docs/resources/update_resource) | resource |
+| [azapi_resource_action.subscription_tags](https://registry.terraform.io/providers/azure/azapi/latest/docs/resources/resource_action) | resource |
+| [azapi_resource_id.tags](https://registry.terraform.io/providers/azure/azapi/latest/docs/data-sources/resource_id) | data source |
 
 ## Inputs
 
