@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Using azapi_resource_action to fix the bug that it would only POST and not PUT. Now Tags that are not specified in the variable tags get deleted.
 
+### Changed
+
+- Updated Microsoft tags resources version to "Microsoft.Resources/tags@2025-04-01"
+
 ## [2.1.0] - 2025-10-23
 
 ### Changed
