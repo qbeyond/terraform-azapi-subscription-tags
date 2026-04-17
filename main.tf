@@ -7,14 +7,18 @@ terraform {
   }
 }
 
-# The resource tags always exist. Therefore we need to use update resource
-resource "azapi_update_resource" "subscription_tags" {
-  type                    = "Microsoft.Resources/tags@2021-04-01"
-  parent_id               = "/subscriptions/${var.subscription_id}"
-  name                    = "default"
-  ignore_missing_property = var.ignore_missing_property
+
+data "azapi_resource_id" "tags" {
+  type      = "Microsoft.Resources/tags@2023-07-01"
+  parent_id = "/subscriptions/${var.subscription_id}"
+  name      = "default"
+}
+# The resource tags always exist. Therefore we need to use resource action.
+resource "azapi_resource_action" "subscription_tags" {
+  type        = "Microsoft.Resources/tags@2023-07-01"
+  resource_id = data.azapi_resource_id.tags.id
+  method      = "PUT"
   body = {
-    operation = "Merge"
     properties = {
       tags = var.tags
     }
